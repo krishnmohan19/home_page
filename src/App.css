@@ -1,0 +1,86 @@
+#loginpart{
+    width: 40%;
+}
+#mainbox{
+    width: 80%;
+    height: 60%;
+    margin-top: 7rem;
+}
+.inputDiv{
+    height: 15%;
+}
+.inputBox{
+   height: 100%;
+   width: 90%;
+   border-radius: 0.5rem;
+   font-size: 1.2rem;
+   border: 0.15rem solid #8080804f;
+}
+.click{
+    background-color: #16395c;
+    border:none;
+}
+.click:hover{
+    background-color:#15508b;    
+} 
+.checkBox{
+    color: #16395c;
+    font-weight: bold;
+    text-decoration: none;
+}
+.checkBox:hover{
+    color: #15508b;
+}
+.checkBoxInput{
+    height: 1rem;
+    width: 1rem;
+}
+#imagepart{
+    width: 60%;
+    background-color: #16395c;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width:746px){
+    #imagepart{
+      display: none;
+    }
+    #loginpart h1{
+      font-size: 2rem!important;
+      line-height: 1rem!important;
+    }
+    
+    #mainbox{
+      height: 400px;
+    }
+    #loginpart{
+      width: 100vw!important;
+      height: 100vh;
+    }
+    html{
+      font-size: calc(3vw + 0.5vh);
+    }
+    nav button{
+      display: none;
+    }
+    
+    #email,#password,button{
+      border-radius: 0.2rem !important;
+      height: calc(5vh + 4vw) !important;
+      font-size: 1rem !important;
+    }
+    #email,#password{
+      border:0.5vw solid #8080804f!important;
+    }
+    #rp,a{
+      font-size: 0.7rem;
+    }
+    #cb
+    {
+      height: 0.7rem !important;
+      width: 0.7rem!important;
+    }
+  }
