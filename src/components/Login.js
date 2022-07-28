@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import myimage from './myimage.svg'
 import axios from 'axios'
+
 function Login() {
 
   const [userDetail,setUserDetail]=useState({
@@ -22,6 +23,7 @@ function Login() {
     
     axios.post("/login", userDetail)
     .then(function (response) {
+      alert(response.data);
       console.log(response);
     })
     .catch(function (error) {
