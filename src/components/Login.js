@@ -23,7 +23,7 @@ function Login() {
     
     axios.post("/login", userDetail)
     .then(function (response) {
-      alert(response.data);
+      alert(response.data.token);
       console.log(response);
     })
     .catch(function (error) {

@@ -22,8 +22,21 @@ app.post("/login",(req,res)=>{
     if(!email){
         res.send("Missing Email");
     }
-   
-    res.send("hash");
+
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";  
+        //specify the length for the new string to be generated  
+    var string_length = 20;  
+    var randomstring = '';  
+
+        //put a loop to select a character randomly in each iteration  
+    for (var i=0; i<string_length; i++) {  
+        var rnum = Math.floor(Math.random() * chars.length);  
+        randomstring += chars.substring(rnum,rnum+1);  
+    }  
+    const data={
+        token:randomstring
+    }
+    res.send(data);
 })
 
 app.listen(9000,()=>{
